@@ -45,20 +45,22 @@ export class ProductsListComponent implements OnInit {
       'imageUrl': 'http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png'
     },
   {
-      "productId": 10,
-      "productName": "Video Game Controller",
-      "productCode": "GMG-0042",
-      "releaseDate": "October 15, 2015",
-      "description": "Standard two-button video game controller",
-      "price": 35.95,
-      "starRating": 4.6,
-      "imageUrl": "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png"
+      'productId': 10,
+      'productName': 'Video Game Controller',
+      'productCode': 'GMG-0042',
+      'releaseDate': 'October 15, 2015',
+      'description': 'Standard two-button video game controller',
+      'price': 35.95,
+      'starRating': 4.6,
+      'imageUrl': 'http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png'
   }
   ];
 
  constructor() { }
 
- ngOnInit() {  }
+ ngOnInit() {
+   console.log('in ngOnInit method');
+  }
 
  toggleImage(): void {
     this.showImage = !this.showImage;

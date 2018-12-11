@@ -4,11 +4,13 @@ import { FormsModule} from '@angular/forms'
 
 import { AppComponent } from './app.component';
 import { ProductsListComponent } from './components/products-list/products-list.component';
+import { ProductFilterPipe } from './Pipes/product-filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductsListComponent
+    ProductsListComponent,
+    ProductFilterPipe
   ],
   imports: [
     BrowserModule,
